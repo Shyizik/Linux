@@ -1,0 +1,76 @@
+    1  ls -l
+    2  dpkg -i package.deb
+    3  sudo dpkg -i package.deb
+    4  cd /
+    5  sudo -i
+    6  exit
+    7  echo "hi all"
+    8  echo "$PWD hi all here!"
+    9  touch hi.sh
+   10  echo $PATH
+   11  echo '#!/bin/bash' > hi.sh
+   12  echo 'echo "Hello Ukraine"' >> hi.sh
+   13  chmod a+x hi.sh
+   14  chmod 777 hi.sh
+   15  ./hi.sh
+   16  ./hi.sh Ukraine
+   17  mkdir -p scripts
+   18  cp hi.sh scripts/
+   19  cp scripts Documents 2>/dev/null || echo "Очікувана помилка копіювання"
+   20  cp -r scripts Documents
+   21  cd scripts
+   22  mv hi.sh ..
+   23  cd ..
+   24  rm scripts 2>/dev/null || echo "Очікувана помилка видалення"
+   25  rm -r scripts
+   26  cd /bin
+   27  ls -l | head -n 5
+   28  cd /
+   29  mkdir -p test_folder
+   30  tar -czvf scripts.tar.gz test_folder
+   31  cat hi.sh 2>/dev/null
+   32  tail -n 20 /var/log/syslog
+   33  cat /var/log/syslog | head -n 10
+   34  cd /
+   35  find . -maxdepth 3 -name "dhcp" 2>/dev/null
+   36  find . -maxdepth 3 -name "*dhcp*" 2>/dev/null
+   37  find . -maxdepth 3 -name "*dhcp*" 2>/dev/null | grep -i "dhcp"
+   38  find . -maxdepth 3 -name "*dhcp*" 2>/dev/null | grep -i "etc"
+   39  ping -c 2 google.com
+   40  ping -c 5 google.com > /dev/null &
+   41  sudo ping -c 5 google.com > /dev/null &
+   42  sleep 5 &
+   43  ls -l
+   44  cd /bin
+   45  ls | head -n 5
+   46  echo $PATH
+   47  printenv | head -n 5
+   48  whoami
+   49  cd /etc/
+   50  ls | head -n 5
+   51  cd ..
+   52  cd lib
+   53  ls | head -n 5
+   54  dmesg | head -n 5
+   55  sudo dmesg | head -n 5
+   56  ls /dev | head -n 5
+   57  sudo dmesg -c
+   58  dmesg
+   59  df -h
+   60  cd /home
+   61  ls -l
+   62  lsmod | head -n 5
+   63  cd /proc
+   64  cat cpuinfo | head -n 5
+   65  echo 1 > /proc/sys/net/ipv4/ip_forward 2>/dev/null || echo "Очікувана помилка прав"
+   66  ifconfig
+   67  ifconfig -a
+   68  cd ~
+   69  echo "vika" > 1.txt
+   70  cat 1.txt
+   71  echo "vasya" > 2.txt
+   72  cat 2.txt
+   73  diff 1.txt 2.txt
+   74  history
+   75  lspci
+   76  history > history.txt
