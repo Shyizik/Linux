@@ -1,0 +1,131 @@
+    1  reboot
+    2  sudo apt install -y virtualbox-guest-x11
+    3  sudo reboot
+    4  uname -a
+    5  sudo apt update && sudo apt upgrade
+    6  cat /etc/apt/sources.list
+    7  sudo apt install vim
+    8  cd ~
+    9  cd Downloads
+   10  man ls
+   11  sudo apt install openssh-server
+   12  ls -l
+   13  dpkg -i package.deb
+   14  sudo dpkg -i package.deb
+   15  cd /
+   16  sudo -i
+   17  uname -a
+   18  sudo apt update && sudo apt upgrade
+   19  cat /etc/apt/sources.list
+   20  sudo apt install vim
+   21  cd ~
+   22  cd Downloads
+   23  man ls
+   24  y
+   25  man ls
+   26  ls -l
+   27  dpkg -i package.deb
+   28  sudo dpkg -i package.deb
+   29  cd /
+   30  sudo -i
+   31  ./hi.sh
+   32  chmod a+x hi.sh
+   33  chmod 777 hi.sh
+   34  ./hi.sh
+   35  ./hi.sh Ukraine
+   36  mkdir -p scripts
+   37  cp hi.sh scripts/
+   38  cp scripts Documents
+   39  cp -r scripts Documents
+   40  cd scripts
+   41  mv hi.sh ..
+   42  cd ..
+   43  rm scripts
+   44  rm -r scripts
+   45  cd /bin
+   46  ls -l
+   47  cd /
+   48  tar -cvzf scripts.tar.gz scripts
+   49  cat hi.sh
+   50  cat /var/log/syslog
+   51  tail -n 20 /var/log/syslog
+   52  less /var/log/syslog
+   53  cd /
+   54  find . -name "dhcp"
+   55  find . -name "*dhcp*"
+   56  find . -name "*dhcp*" | grep -i "dhcp"
+   57  find . -name "*dhcp*" | grep -i "etc"
+   58  ping google.com
+   59  ping google.com &
+   60  sudo ping google.com &
+   61  vlc &
+   62  ls -l
+   63  cd /bin
+   64  ls
+   65  echo $PATH
+   66  printenv
+   67  whoami
+   68  cd /etc/
+   69  ls
+   70  cd ..
+   71  cd lib
+   72  ls
+   73  dmesg
+   74  sudo dmesg
+   75  ls /dev
+   76  sudo dmesg -c
+   77  dmesg
+   78  df -h
+   79  cd /home
+   80  ls -l
+   81  lsmod
+   82  cd /proc
+   83  cat cpuinfo
+   84  echo 1 > /proc/sys/net/ipv4/ip_forward
+   85  sudo -i
+   86  ping google.com &
+   87  sudo ping google.com &
+   88  vlc &
+   89  ls -l
+   90  cd /bin
+   91  ls
+   92  echo $PATH
+   93  printenv
+   94  whoami
+   95  cd /etc/
+   96  ls
+   97  cd ..
+   98  cd lib
+   99  ls
+  100  dmesg
+  101  sudo dmesg
+  102  ls /dev
+  103  sudo dmesg -c
+  104  dmesg
+  105  df -h
+  106  cd /home
+  107  ls -l
+  108  lsmod
+  109  cd /proc
+  110  cat cpuinfo
+  111  echo 1 > /proc/sys/net/ipv4/ip_forward
+  112  sudo -i
+  113  sudo killall ping
+  114  cat cpuinfo
+  115  echo 1 > /proc/sys/net/ipv4/ip_forward
+  116  sudo -i
+  117  ping google.com > /dev/null &
+  118  sudo ping google.com > /dev/null &
+  119  vlc &
+  120  sudo apt install vlc-bin -y
+  121  ping google.com > /dev/null &
+  122  sudo ping google.com > /dev/null &
+  123  vlc &
+  124  fg
+  125  ps aux | grep ping
+  126  kill 19620
+  127  ps aux | grep ping
+  128  kill 19621
+  129  sudo kill -9 19621
+  130  sudo killall vlc
+  131  history > history_terminal_2.txt
